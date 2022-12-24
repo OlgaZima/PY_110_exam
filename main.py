@@ -43,17 +43,17 @@ def get_book() -> str:
 
 # Рандомный год
 def get_year() -> int:
-    return random.randrange(1900, 2022, 1)
+    return random.randint(1900, 2022)
 
 
 # Рандомное кол-во страниц
 def get_page() -> int:
-    return random.randrange(1, 1000000, 1)
+    return random.randint(1, 1000000)
 
 
 #Рандомный рейтинг
 def get_rating() -> float:
-    return random.uniform(0, 5)
+    return random.uniform(0.0, 5.)
 
 
 # Рандомная стоимость книги
